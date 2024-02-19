@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\weights.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\weights.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ImGui.NET" Version="1.90.0.1" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ExileCore">
+      <HintPath>..\..\..\Desktop\sUPPORT\POEHelper\ExileCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GameOffsets">
+      <HintPath>..\..\..\Desktop\sUPPORT\POEHelper\GameOffsets.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\..\..\Desktop\sUPPORT\POEHelper\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
