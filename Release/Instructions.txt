@@ -1,0 +1,3 @@
+Place RestSharp.dll inside the main root folder of the bot. 
+
+Place SextantHelper.dll inside Plugins/Compiled/SextantHelper (You will need to create the folder)
